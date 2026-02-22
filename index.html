@@ -66,6 +66,8 @@ h2 .accent{color:var(--green)}
 .stat-box:hover{border-color:var(--green)}
 .stat-num{font-family:var(--font-hero);font-size:3rem;color:var(--green);line-height:1}
 .stat-label{font-family:var(--font-mono);font-size:.65rem;color:var(--muted);letter-spacing:.1em;text-transform:uppercase;margin-top:.3rem}
+.quote{font-family:var(--font-hero);font-size:1.5rem;letter-spacing:.04em;color:var(--green);line-height:1.2;max-width:400px}
+.quote-author{font-family:var(--font-mono);font-size:.75rem;color:var(--muted);letter-spacing:.08em;margin-top:.5rem}
 
 /* SERVICES */
 #services{border-top:1px solid var(--border)}
@@ -106,6 +108,7 @@ h2 .accent{color:var(--green)}
 .exp-desc{font-size:.875rem;color:var(--muted);line-height:1.8;max-width:680px}
 .exp-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.8rem}
 .exp-tag{font-family:var(--font-mono);font-size:.6rem;padding:.2rem .6rem;border:1px solid rgba(170,255,0,.25);color:var(--green);letter-spacing:.06em}
+
 
 /* PROJECTS */
 #projects{border-top:1px solid var(--border)}
@@ -182,7 +185,6 @@ footer p{font-family:var(--font-mono);font-size:.65rem;color:var(--muted)}
   <ul class="nav-links">
     <li><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
-    <li><a href="#skills">Skills</a></li>
     <li><a href="#experience">Experience</a></li>
     <li><a href="#projects">Projects</a></li>
     <li><a href="#contact">Contact</a></li>
@@ -241,7 +243,10 @@ footer p{font-family:var(--font-mono);font-size:.65rem;color:var(--muted)}
     <div class="about-right reveal">
       <!-- <p>Studied at <strong>MICT, Mandalay</strong>. Picked up CS50x from Harvard along the way.</p> -->
       <!-- <p>Worked at a <strong>Japan-based startup</strong> and currently at <strong>Connected Business Solution</strong> — shipping features, integrating payments, keeping things fast.</p> -->
-      <p>I speak Myanmar, English, and a little Japanese. Always learning. Always shipping. ✌️</p>
+      <!-- <p>I speak Myanmar, English, and a little Japanese. Always learning. Always shipping. </p> -->
+
+      <blockquote class="quote reveal">"Strive not to be a success, but rather to be of value."</blockquote>
+      <p class="quote-author">— Albert Einstein</p>
       <br>
       <a href="https://y2thek.github.io/y2k/assets/Resume.pdf" target="_blank" class="btn-primary">Download Resume</a>
     </div>
@@ -266,7 +271,7 @@ footer p{font-family:var(--font-mono);font-size:.65rem;color:var(--muted)}
     <div class="service-card">
       <span class="service-icon">&#9671;</span>
       <h3>AI Integration</h3>
-      <p>Integrating AI APIs and LLMs into web apps — intelligent chatbots, smart search, content generation, and workflow automation for modern products.</p>
+      <p>Integrating AI into web apps — intelligent chatbots, smart search, content generation, and workflow automation for modern products.</p>
     </div>
   </div>
 </section>
