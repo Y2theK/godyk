@@ -3,11 +3,116 @@
 <head>
 <meta charset="UTF-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
-<title>Ye Yint Kyaw · Web Developer</title>
+
+<!-- Primary Meta -->
+<title>Ye Yint Kyaw | Backend & Full-Stack Web Developer – Laravel, Vue.js, React</title>
+<meta name="description" content="Ye Yint Kyaw is a backend and full-stack web developer from Mandalay, Myanmar with 3+ years of experience building scalable web apps. Open to remote work worldwide." />
+<meta name="keywords" content="Ye Yint Kyaw, web developer, backend developer, full-stack developer, Myanmar developer, remote developer, Mandalay" />
+<meta name="author" content="Ye Yint Kyaw" />
+<meta name="robots" content="index, follow" />
+<link rel="canonical" href="https://godyk.vercel.app" />
+
+<!-- Open Graph / Facebook -->
+<meta property="og:type" content="website" />
+<meta property="og:url" content="https://godyk.vercel.app" />
+<meta property="og:title" content="Ye Yint Kyaw | Backend & Full-Stack Web Developer" />
+<meta property="og:description" content="Backend developer from Myanmar with 3+ years experience. Open to remote opportunities worldwide." />
+<meta property="og:image" content="https://y2thek.github.io/y2k/images/godyk.jpg" />
+<meta property="og:locale" content="en_US" />
+<meta property="og:site_name" content="Ye Yint Kyaw Portfolio" />
+
+<!-- Twitter Card -->
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:url" content="https://godyk.vercel.app" />
+<meta name="twitter:title" content="Ye Yint Kyaw | Backend & Full-Stack Web Developer" />
+<meta name="twitter:description" content="Backend developer from Myanmar with 3+ years experience. Open to remote opportunities worldwide." />
+<meta name="twitter:image" content="https://y2thek.github.io/y2k/images/godyk.jpg" />
+
+<!-- Theme & App -->
+<meta name="theme-color" content="#aaff00" />
+<meta name="color-scheme" content="dark light" />
+<meta name="application-name" content="Ye Yint Kyaw Portfolio" />
+
+<!-- JSON-LD Structured Data -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Ye Yint Kyaw",
+  "url": "https://y2thek.github.io/y2k/",
+  "image": "https://y2thek.github.io/y2k/images/godyk.jpg",
+  "jobTitle": "Backend & Full-Stack Web Developer",
+  "description": "Backend developer with 3+ years of experience building scalable web applications using Laravel, Vue.js, React and MySQL.",
+  "email": "yeyintkyaw.dev@gmail.com",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "Mandalay",
+    "addressCountry": "MM"
+  },
+  "sameAs": [
+    "https://github.com/Y2theK/",
+    "https://www.linkedin.com/in/ye-yint-kyaw-85a030221/"
+  ],
+  "knowsAbout": ["Laravel", "Vue.js", "React", "MySQL", "Node.js", "JavaScript", "MongoDB", "Tailwind CSS", "REST API", "Web Development"],
+  "alumniOf": {
+    "@type": "CollegeOrUniversity",
+    "name": "Myanmar Institute of Information Technology",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Mandalay",
+      "addressCountry": "MM"
+    }
+  }
+}
+</script>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Mono:wght@400;700&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet">
 <style>
 :root{--bg:#0d0f0e;--bg2:#121614;--bg3:#161a18;--card:#1a1f1d;--border:#252b28;--green:#aaff00;--green2:#7dcc00;--text:#e8ede9;--muted:#7a8880;--font-hero:'Bebas Neue',sans-serif;--font-mono:'Space Mono',monospace;--font-body:'DM Sans',sans-serif}
+
+/* LIGHT MODE */
+body.light{--bg:#f5f5f0;--bg2:#ebebE4;--bg3:#e0e0d8;--card:#ffffff;--border:#d0d0c4;--text:#111111;--muted:#555550}
+body.light nav{background:rgba(245,245,240,.9)}
+body.light .btn-primary{color:#000}
+body.light .stat-box{background:#fff;border-color:#d0d0c4}
+body.light .service-card{background:#fff}
+body.light .project-card{background:#fff}
+body.light .project-thumb{background:#e0e0d8}
+body.light .thumb-art{opacity:.35}
+body.light .contact-form input,body.light .contact-form textarea{background:#fff;border-color:#d0d0c4;color:#111}
+body.light #cta{background:#ebebE4}
+body.light .hero-name{text-shadow:0 0 40px rgba(0,0,0,.08)}
+body.light .skill-track{background:#d8d8d0}
+body.light .exp-timeline::before{background:linear-gradient(180deg,var(--green),transparent)}
+body.light .avatar-bg{background:linear-gradient(175deg,#dde8dd 0%,#c8d8c8 100%);border-color:#b0c8b0;box-shadow:0 8px 40px rgba(0,0,0,.08)}
+body.light .avatar-silhouette{background:linear-gradient(180deg,#b8ccb8 0%,#9ab49a 100%);border-color:color-mix(in srgb,var(--green) 30%,transparent)}
+body.light .avatar-silhouette::after{background:linear-gradient(180deg,color-mix(in srgb,var(--green) 10%,transparent) 0%,transparent 100%)}
+body.light .avatar-head{background:#a8bea8;border-color:color-mix(in srgb,var(--green) 25%,transparent)}
+body.light .avatar-glow{opacity:.25;filter:blur(50px)}
+body.light .avatar-label{color:var(--green);opacity:1;font-weight:700}
+body.light #hero::before{background:radial-gradient(ellipse 80% 60% at 40% 100%,color-mix(in srgb,var(--green) 5%,transparent) 0%,transparent 70%)}
+body.light footer{border-color:#d0d0c4}
+
+/* DARK/LIGHT TOGGLE */
+.theme-toggle{position:relative;width:52px;height:26px;background:var(--border);border:1px solid var(--border);border-radius:13px;cursor:pointer;transition:background .3s,border-color .3s;flex-shrink:0;padding:0;overflow:hidden}
+.theme-toggle::before{content:'☀';position:absolute;right:5px;top:50%;transform:translateY(-50%);font-size:11px;line-height:1;transition:opacity .2s;opacity:1;z-index:0;color:#fff}
+.theme-toggle::after{content:'';position:absolute;top:2px;left:2px;width:20px;height:20px;border-radius:50%;background:var(--green);transition:transform .35s cubic-bezier(.34,1.56,.64,1);box-shadow:0 1px 4px rgba(0,0,0,.35);z-index:1}
+body.light .theme-toggle{background:#d4d4cc;border-color:#c0c0b8}
+body.light .theme-toggle::before{content:'🌙';right:auto;left:5px}
+body.light .theme-toggle::after{transform:translateX(26px)}
+
+/* COLOR PICKER */
+.color-picker-btn{position:fixed;bottom:2rem;right:2rem;z-index:200;width:46px;height:46px;border-radius:50%;background:var(--card);border:1px solid var(--border);cursor:pointer;display:flex;align-items:center;justify-content:center;box-shadow:0 2px 12px rgba(0,0,0,.25);transition:transform .2s,box-shadow .2s}
+.color-picker-btn:hover{transform:scale(1.08);box-shadow:0 4px 18px rgba(0,0,0,.35)}
+.color-picker-btn svg{width:20px;height:20px;fill:var(--green)}
+.color-panel{position:fixed;bottom:4.8rem;right:2rem;z-index:200;background:var(--card);border:1px solid var(--border);padding:.5rem .6rem;display:flex;flex-direction:row;gap:.5rem;box-shadow:0 8px 40px rgba(0,0,0,.3);opacity:0;pointer-events:none;transform:translateY(8px);transition:opacity .25s,transform .25s;border-radius:4px}
+.color-panel.open{opacity:1;pointer-events:all;transform:translateY(0)}
+.color-panel-title{font-family:var(--font-mono);font-size:.55rem;color:var(--muted);letter-spacing:.15em;text-transform:uppercase;margin-bottom:.1rem}
+.color-swatch{display:flex;align-items:center;cursor:pointer;padding:.25rem;border:2px solid transparent;border-radius:50%;transition:border-color .2s}
+.color-swatch:hover .swatch-dot{transform:scale(1.15)}
+.color-swatch.active{border-color:var(--green);border-radius:50%}
+.swatch-dot{width:24px;height:24px;border-radius:50%;flex-shrink:0;box-shadow:0 2px 6px rgba(0,0,0,.25);transition:transform .2s}
+
 *,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
 html{scroll-behavior:smooth}
 body{background:var(--bg);color:var(--text);font-family:var(--font-body);line-height:1.6;overflow-x:hidden;cursor:none}
@@ -28,15 +133,15 @@ h2 .accent{color:var(--green)}
 .btn-primary{font-family:var(--font-mono);font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;padding:.85rem 2rem;background:var(--green);color:#000;border:none;text-decoration:none;display:inline-block;font-weight:700;cursor:pointer;transition:background .2s,transform .15s;clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,10px 100%,0 calc(100% - 10px))}
 .btn-primary:hover{background:var(--green2);transform:translateY(-2px)}
 .btn-ghost{font-family:var(--font-mono);font-size:.8rem;letter-spacing:.1em;text-transform:uppercase;padding:.85rem 2rem;background:transparent;color:var(--green);border:1px solid var(--green);text-decoration:none;display:inline-block;transition:background .2s,transform .15s;clip-path:polygon(0 0,calc(100% - 10px) 0,100% 10px,100% 100%,10px 100%,0 calc(100% - 10px))}
-.btn-ghost:hover{background:rgba(170,255,0,.08);transform:translateY(-2px)}
+.btn-ghost:hover{background:color-mix(in srgb,var(--green) 8%,transparent);transform:translateY(-2px)}
 
 /* HERO */
 #hero{min-height:100vh;display:grid;grid-template-columns:1fr 380px;gap:2rem;align-items:center;padding-top:8rem;padding-bottom:4rem;max-width:1280px;margin:0 auto;padding-left:3rem;padding-right:3rem;position:relative}
-#hero::before{content:'';position:absolute;bottom:0;left:0;right:0;height:60%;background:radial-gradient(ellipse 80% 60% at 40% 100%,rgba(170,255,0,.07) 0%,transparent 70%);pointer-events:none}
+#hero::before{content:'';position:absolute;bottom:0;left:0;right:0;height:60%;background:radial-gradient(ellipse 80% 60% at 40% 100%,color-mix(in srgb,var(--green) 7%,transparent) 0%,transparent 70%);pointer-events:none}
 .hero-left{position:relative;z-index:1}
-.hero-name{font-family:var(--font-hero);font-size:clamp(5rem,12vw,10rem);line-height:.88;letter-spacing:-.01em;color:var(--green);text-shadow:0 0 40px rgba(170,255,0,.25);animation:glitch 4s infinite}
+.hero-name{font-family:var(--font-hero);font-size:clamp(5rem,12vw,10rem);line-height:.88;letter-spacing:-.01em;color:var(--green);text-shadow:0 0 40px color-mix(in srgb,var(--green) 25%,transparent);animation:glitch 4s infinite}
 .hero-name span{color:var(--text)}
-@keyframes glitch{0%,95%,100%{text-shadow:0 0 40px rgba(170,255,0,.25);clip-path:none}96%{text-shadow:3px 0 0 rgba(255,0,80,.6),-3px 0 0 rgba(0,200,255,.6);clip-path:polygon(0 30%,100% 30%,100% 33%,0 33%)}97%{text-shadow:-3px 0 0 rgba(255,0,80,.6),3px 0 0 rgba(0,200,255,.6);clip-path:polygon(0 55%,100% 55%,100% 60%,0 60%)}98%{clip-path:none}}
+@keyframes glitch{0%,95%,100%{text-shadow:0 0 40px color-mix(in srgb,var(--green) 25%,transparent);clip-path:none}96%{text-shadow:3px 0 0 rgba(255,0,80,.6),-3px 0 0 rgba(0,200,255,.6);clip-path:polygon(0 30%,100% 30%,100% 33%,0 33%)}97%{text-shadow:-3px 0 0 rgba(255,0,80,.6),3px 0 0 rgba(0,200,255,.6);clip-path:polygon(0 55%,100% 55%,100% 60%,0 60%)}98%{clip-path:none}}
 .hero-subtitle{margin-top:1.5rem;font-family:var(--font-mono);font-size:.9rem;color:var(--muted);letter-spacing:.05em;max-width:420px}
 .hero-subtitle strong{color:var(--green)}
 .hero-ctas{margin-top:2.5rem;display:flex;gap:1rem;flex-wrap:wrap}
@@ -45,9 +150,9 @@ h2 .accent{color:var(--green)}
 .avatar-bg{position:absolute;inset:0;background:linear-gradient(175deg,#1a2a1a 0%,#0a110a 100%);border:1px solid var(--border);clip-path:polygon(50% 0%,100% 15%,100% 85%,50% 100%,0% 85%,0% 15%)}
 .avatar-glow{position:absolute;bottom:-20px;left:50%;transform:translateX(-50%);width:200px;height:100px;background:var(--green);filter:blur(50px);opacity:.35}
 .avatar-placeholder{width:280px;height:420px;position:relative;z-index:1;display:flex;flex-direction:column;align-items:center;justify-content:flex-end;padding-bottom:1rem;gap:.5rem}
-.avatar-silhouette{width:120px;height:280px;background:linear-gradient(180deg,#2a3a2a 0%,#1a2a1a 100%);border:1px solid rgba(170,255,0,.2);border-radius:60px 60px 10px 10px;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding-top:1rem;overflow:hidden}
-.avatar-silhouette::after{content:'';position:absolute;top:0;left:0;right:0;height:50%;background:linear-gradient(180deg,rgba(170,255,0,.08) 0%,transparent 100%)}
-.avatar-head{width:70px;height:80px;background:#2f3f2f;border-radius:50% 50% 40% 40%;border:1px solid rgba(170,255,0,.15);position:relative;z-index:1}
+.avatar-silhouette{width:120px;height:280px;background:linear-gradient(180deg,#2a3a2a 0%,#1a2a1a 100%);border:1px solid color-mix(in srgb,var(--green) 20%,transparent);border-radius:60px 60px 10px 10px;position:relative;display:flex;flex-direction:column;align-items:center;justify-content:flex-start;padding-top:1rem;overflow:hidden}
+.avatar-silhouette::after{content:'';position:absolute;top:0;left:0;right:0;height:50%;background:linear-gradient(180deg,color-mix(in srgb,var(--green) 8%,transparent) 0%,transparent 100%)}
+.avatar-head{width:70px;height:80px;background:#2f3f2f;border-radius:50% 50% 40% 40%;border:1px solid color-mix(in srgb,var(--green) 15%,transparent);position:relative;z-index:1}
 .avatar-eyes{position:absolute;top:30px;left:50%;transform:translateX(-50%);display:flex;gap:18px}
 .avatar-eye{width:7px;height:7px;background:var(--green);border-radius:50%;box-shadow:0 0 8px var(--green);animation:blink 3s infinite}
 @keyframes blink{0%,90%,100%{transform:scaleY(1)}95%{transform:scaleY(.1)}}
@@ -74,7 +179,7 @@ h2 .accent{color:var(--green)}
 .services-grid{margin-top:3rem;display:grid;grid-template-columns:repeat(3,1fr);gap:1.5rem}
 .service-card{background:var(--card);border:1px solid var(--border);padding:2rem;position:relative;transition:border-color .3s,transform .3s,box-shadow .3s;clip-path:polygon(0 0,calc(100% - 16px) 0,100% 16px,100% 100%,0 100%);opacity:0;transform:translateY(30px)}
 .service-card.visible{opacity:1;transform:translateY(0);transition:opacity .6s ease,transform .6s ease,border-color .3s,box-shadow .3s}
-.service-card:hover{border-color:var(--green);transform:translateY(-6px);box-shadow:0 20px 60px rgba(170,255,0,.08)}
+.service-card:hover{border-color:var(--green);transform:translateY(-6px);box-shadow:0 20px 60px color-mix(in srgb,var(--green) 8%,transparent)}
 .service-card::before{content:'';position:absolute;top:0;right:0;width:16px;height:16px;border-bottom:1px solid var(--border);border-left:1px solid var(--border);transition:border-color .3s}
 .service-card:hover::before{border-color:var(--green)}
 .service-icon{font-size:1.5rem;margin-bottom:1rem;display:block}
@@ -100,14 +205,14 @@ h2 .accent{color:var(--green)}
 .exp-timeline::before{content:'';position:absolute;left:0;top:8px;bottom:0;width:1px;background:linear-gradient(180deg,var(--green),transparent)}
 .exp-item{position:relative;margin-bottom:3rem;opacity:0;transform:translateX(-20px);transition:opacity .6s ease,transform .6s ease}
 .exp-item.visible{opacity:1;transform:translateX(0)}
-.exp-dot{position:absolute;left:-2.9rem;top:.4rem;width:10px;height:10px;background:var(--green);border-radius:50%;box-shadow:0 0 12px rgba(170,255,0,.6)}
+.exp-dot{position:absolute;left:-2.9rem;top:.4rem;width:10px;height:10px;background:var(--green);border-radius:50%;box-shadow:0 0 12px color-mix(in srgb,var(--green) 60%,transparent)}
 .exp-period{font-family:var(--font-mono);font-size:.65rem;color:var(--green);letter-spacing:.15em;margin-bottom:.4rem}
 .exp-role{font-family:var(--font-hero);font-size:1.6rem;letter-spacing:.04em;color:var(--text);line-height:1}
 .exp-company{font-family:var(--font-mono);font-size:.75rem;color:var(--muted);letter-spacing:.08em;margin:.3rem 0 .8rem}
 .exp-company span{color:var(--green)}
 .exp-desc{font-size:.875rem;color:var(--muted);line-height:1.8;max-width:680px}
 .exp-tags{display:flex;flex-wrap:wrap;gap:.4rem;margin-top:.8rem}
-.exp-tag{font-family:var(--font-mono);font-size:.6rem;padding:.2rem .6rem;border:1px solid rgba(170,255,0,.25);color:var(--green);letter-spacing:.06em}
+.exp-tag{font-family:var(--font-mono);font-size:.6rem;padding:.2rem .6rem;border:1px solid var(--green);color:var(--green);letter-spacing:.06em;opacity:.75}
 
 
 /* PROJECTS */
@@ -118,8 +223,8 @@ h2 .accent{color:var(--green)}
 .project-card.visible{opacity:1;transform:translateY(0);transition:opacity .6s ease,transform .6s ease,border-color .3s}
 .project-card:hover{border-color:var(--green);transform:translateY(-4px)}
 .project-thumb{width:100%;height:160px;background:var(--bg3);position:relative;overflow:hidden}
-.thumb-art{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-family:var(--font-hero);font-size:3.5rem;color:rgba(170,255,0,.08);letter-spacing:.1em;position:relative}
-.thumb-art::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 4px,rgba(170,255,0,.02) 4px,rgba(170,255,0,.02) 5px)}
+.thumb-art{width:100%;height:100%;display:flex;align-items:center;justify-content:center;font-family:var(--font-hero);font-size:3.5rem;color:var(--green);opacity:.15;letter-spacing:.1em;position:relative}
+.thumb-art::before{content:'';position:absolute;inset:0;background:repeating-linear-gradient(0deg,transparent,transparent 4px,rgba(0,0,0,.015) 4px,rgba(0,0,0,.015) 5px);mix-blend-mode:overlay}
 .project-body{padding:1.5rem}
 .project-number{font-family:var(--font-mono);font-size:.65rem;color:var(--green);letter-spacing:.15em;margin-bottom:.5rem}
 .project-card h3{font-family:var(--font-hero);font-size:1.4rem;letter-spacing:.04em;margin-bottom:.6rem}
@@ -163,13 +268,18 @@ footer p{font-family:var(--font-mono);font-size:.65rem;color:var(--muted)}
 
 /* RESPONSIVE */
 @media(max-width:900px){
-  #hero{grid-template-columns:1fr;padding-top:6rem}
-  .hero-avatar{display:none}
+  #hero{grid-template-columns:1fr;padding-top:6rem;justify-items:center;}
+  .hero-avatar{display:flex;height:340px;order:-1}
+  .avatar-wrap{width:220px;height:340px}
+  .avatar-placeholder{width:190px;height:300px}
+  .avatar-silhouette{width:90px;height:210px}
+  .avatar-head{width:54px;height:62px}
   .about-layout,.skills-layout,.cta-inner,.contact-layout{grid-template-columns:1fr;gap:2rem}
   .services-grid,.projects-grid{grid-template-columns:1fr}
   nav{padding:1rem 1.5rem}
   .nav-links{gap:1rem}
   .nav-links a{font-size:.65rem}
+  .nav-desktop{display:none}
   section{padding:4rem 1.5rem}
   #cta{padding:4rem 1.5rem}
   footer{padding:2rem 1.5rem;flex-direction:column;gap:.5rem;text-align:center}
@@ -183,10 +293,13 @@ footer p{font-family:var(--font-mono);font-size:.65rem;color:var(--muted)}
 <nav>
   <a class="nav-logo" href="#"><span>@</span>Y2THEK<span>.DEV</span></a>
   <ul class="nav-links">
+    <li class="nav-desktop"><a href="#about">About</a></li>
     <li><a href="#services">Services</a></li>
     <li><a href="#experience">Experience</a></li>
+    <li class="nav-desktop"><a href="#projects">Projects</a></li>
     <li><a href="#contact">Contact</a></li>
   </ul>
+  <button class="theme-toggle" id="theme-toggle" onclick="toggleTheme()" aria-label="Toggle theme"></button>
 </nav>
 
 <!-- HERO -->
@@ -468,7 +581,7 @@ footer p{font-family:var(--font-mono);font-size:.65rem;color:var(--muted)}
       <h3>Available for<br>new projects.</h3>
       <p>Open to freelance projects and full-time opportunities. Based in Mandalay, Myanmar. Available for remote work worldwide. I'll get back to you within 24 hours.</p>
       <div class="contact-links">
-        <a href="mailto:yeyintkyaw.dev@gmail.com" class="contact-link">yeyintkyaw.dev@gmail.com</a>
+        <a href="/cdn-cgi/l/email-protection#1b627e6272756f70627a6c357f7e6d5b7c767a727735787476" class="contact-link"><span class="__cf_email__" data-cfemail="f8819d8191968c9381998fd69c9d8eb89f95999194d69b9795">[email&#160;protected]</span></a>
         <a href="https://github.com/Y2theK/" target="_blank" class="contact-link">github.com/Y2theK</a>
         <a href="https://www.linkedin.com/in/ye-yint-kyaw-85a030221/" target="_blank" class="contact-link">linkedin.com/in/ye-yint-kyaw</a>
         <a href="tel:+959796779906" class="contact-link">+95 9796779906</a>
@@ -495,7 +608,7 @@ footer p{font-family:var(--font-mono);font-size:.65rem;color:var(--muted)}
 <!-- FOOTER -->
 <footer>
   <span class="logo">YE YINT KYAW</span>
-  <p>2026 · yeyintkyaw.dev@gmail.com</p>
+  <p>2026 · <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="4f362a3626213b24362e38612b2a390f28222e2623612c2022">[email&#160;protected]</a></p>
 </footer>
 
 <script>
@@ -528,6 +641,62 @@ document.querySelectorAll('.service-card').forEach(function(card, i) {
   setTimeout(function() { card.classList.add('visible'); }, 400 + i * 150);
 });
 
+
+// THEME TOGGLE
+function toggleTheme() {
+  var body = document.body;
+  if (body.classList.contains('light')) {
+    body.classList.remove('light');
+    localStorage.setItem('theme', 'dark');
+  } else {
+    body.classList.add('light');
+    localStorage.setItem('theme', 'light');
+  }
+}
+if (localStorage.getItem('theme') === 'light') {
+  document.body.classList.add('light');
+}
+
+// COLOR PICKER
+var accents = {
+  green:  { main: '#aaff00', sec: '#7dcc00' },
+  orange: { main: '#ff6b2b', sec: '#cc4f18' },
+  blue:   { main: '#6dd6d6', sec: '#4aadad' }
+};
+
+function setAccent(name, closePanel) {
+  var a = accents[name];
+  if (!a) return;
+  document.documentElement.style.setProperty('--green', a.main);
+  document.documentElement.style.setProperty('--green2', a.sec);
+  document.querySelectorAll('.color-swatch').forEach(function(s) { s.classList.remove('active'); });
+  var sw = document.getElementById('swatch-' + name);
+  if (sw) sw.classList.add('active');
+  localStorage.setItem('accent', name);
+  if (closePanel) {
+    var panel = document.getElementById('colorPanel');
+    if (panel) panel.classList.remove('open');
+  }
+}
+
+function toggleColorPanel() {
+  var panel = document.getElementById('colorPanel');
+  if (panel) panel.classList.toggle('open');
+}
+
+document.addEventListener('click', function(e) {
+  var panel = document.getElementById('colorPanel');
+  var btn = document.getElementById('colorPickerBtn');
+  if (panel && btn && panel.classList.contains('open') && !panel.contains(e.target) && !btn.contains(e.target)) {
+    panel.classList.remove('open');
+  }
+});
+
+var savedAccent = localStorage.getItem('accent');
+if (savedAccent && accents[savedAccent]) {
+  setAccent(savedAccent, false);
+}
+
 function handleSubmit(e) {
   e.preventDefault();
   var btn = document.getElementById('submit-btn');
@@ -542,5 +711,21 @@ function handleSubmit(e) {
   }, 3000);
 }
 </script>
+
+<!-- COLOR PICKER -->
+<button class="color-picker-btn" id="colorPickerBtn" onclick="toggleColorPanel()" aria-label="Choose accent color">
+  <svg viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10c.83 0 1.5-.67 1.5-1.5 0-.39-.15-.74-.39-1.01-.23-.26-.38-.61-.38-.99 0-.83.67-1.5 1.5-1.5H16c2.76 0 5-2.24 5-5 0-4.42-4.03-8-9-8zm-5.5 9c-.83 0-1.5-.67-1.5-1.5S5.67 8 6.5 8 8 8.67 8 9.5 7.33 11 6.5 11zm3-4C8.67 7 8 6.33 8 5.5S8.67 4 9.5 4s1.5.67 1.5 1.5S10.33 7 9.5 7zm5 0c-.83 0-1.5-.67-1.5-1.5S13.67 4 14.5 4s1.5.67 1.5 1.5S15.33 7 14.5 7zm3 4c-.83 0-1.5-.67-1.5-1.5S16.67 8 17.5 8s1.5.67 1.5 1.5S18.33 11 17.5 11z"/></svg>
+</button>
+<div class="color-panel" id="colorPanel">
+  <div class="color-swatch active" id="swatch-green" onclick="setAccent('green', true)" title="Neon Green">
+    <div class="swatch-dot" style="background:#aaff00"></div>
+  </div>
+  <div class="color-swatch" id="swatch-orange" onclick="setAccent('orange', true)" title="Cyber Orange">
+    <div class="swatch-dot" style="background:#ff6b2b"></div>
+  </div>
+  <div class="color-swatch" id="swatch-blue" onclick="setAccent('blue', true)" title="Duck Egg Blue">
+    <div class="swatch-dot" style="background:#6dd6d6"></div>
+  </div>
+</div>
 </body>
 </html>
